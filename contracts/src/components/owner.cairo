@@ -1,3 +1,4 @@
+// File: src/components/owner.cairo
 use starknet::ContractAddress;
 
 // contract address owning an entity

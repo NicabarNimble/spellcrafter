@@ -1,3 +1,4 @@
+// File: src/constants.cairo
 const INITIAL_BARRIERS: u32 = 3;
 const CHAOS_PER_FORAGE: u32 = 3;
 const ITEM_LIMIT: u32 = 7;

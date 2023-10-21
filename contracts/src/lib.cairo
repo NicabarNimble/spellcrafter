@@ -1,3 +1,4 @@
+// File: src/lib.cairo
 mod components;
 mod systems;
 mod constants;

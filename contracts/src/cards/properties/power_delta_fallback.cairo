@@ -1,3 +1,4 @@
+// File: src/cards/properties/power_delta_fallback.cairo
 
 // This file is generated. Do not edit! 
 // Edit the cards.csv instead and regenerate

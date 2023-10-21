@@ -1,3 +1,4 @@
+// File: src/components/occupied.cairo
 
 // Represents an entity that is occupied until a given timestamp
 #[derive(Model, Copy, Drop, Serde)]

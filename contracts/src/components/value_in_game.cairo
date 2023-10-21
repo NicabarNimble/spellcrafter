@@ -1,3 +1,4 @@
+// File: src/components/value_in_game.cairo
 // The value of a particular property in the context of a game
 #[derive(Model, Copy, Drop, Serde)]
 struct ValueInGame {

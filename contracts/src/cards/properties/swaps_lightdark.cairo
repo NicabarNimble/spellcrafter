@@ -1,3 +1,4 @@
+// File: src/cards/properties/swaps_lightdark.cairo
 
 // This file is generated. Do not edit! 
 // Edit the cards.csv instead and regenerate

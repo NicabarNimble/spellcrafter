@@ -1,3 +1,4 @@
+// File: src/cards/properties.cairo
 mod region_lookup;
 mod requires_hot_gt;
 mod requires_cold_gt;

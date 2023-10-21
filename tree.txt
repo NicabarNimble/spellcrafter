@@ -1,0 +1,216 @@
+.
+├── LICENSE
+├── README.md
+├── assets
+│   └── concept-art.png
+├── card-assets
+│   ├── back.png
+│   ├── front_background.png
+│   └── front_frame.png
+├── card-gen
+│   ├── requirements.txt
+│   └── src
+│       ├── card
+│       │   ├── __pycache__
+│       │   │   ├── card.cpython-311.pyc
+│       │   │   ├── card.cpython-39.pyc
+│       │   │   ├── card_builder.cpython-311.pyc
+│       │   │   └── card_builder.cpython-39.pyc
+│       │   ├── card.py
+│       │   └── card_builder.py
+│       ├── deck
+│       │   ├── __pycache__
+│       │   │   ├── deck.cpython-311.pyc
+│       │   │   └── deck_builder.cpython-311.pyc
+│       │   ├── deck.py
+│       │   └── deck_builder.py
+│       ├── gen
+│       │   ├── __pycache__
+│       │   │   ├── generator.cpython-311.pyc
+│       │   │   └── generator.cpython-39.pyc
+│       │   └── generator.py
+│       ├── layer
+│       │   ├── __pycache__
+│       │   │   ├── card_layer.cpython-311.pyc
+│       │   │   ├── card_layer.cpython-39.pyc
+│       │   │   ├── card_layer_factory.cpython-311.pyc
+│       │   │   ├── card_layer_factory.cpython-39.pyc
+│       │   │   ├── image_card_layers.cpython-311.pyc
+│       │   │   ├── image_card_layers.cpython-39.pyc
+│       │   │   └── text_card_layers.cpython-311.pyc
+│       │   ├── card_layer.py
+│       │   ├── card_layer_factory.py
+│       │   ├── image_card_layers.py
+│       │   └── text_card_layers.py
+│       ├── param
+│       │   ├── __pycache__
+│       │   │   ├── config_enums.cpython-311.pyc
+│       │   │   ├── config_enums.cpython-39.pyc
+│       │   │   └── input_parameters.cpython-311.pyc
+│       │   ├── config_enums.py
+│       │   └── input_parameters.py
+│       ├── provider
+│       │   ├── __pycache__
+│       │   │   ├── input_provider.cpython-311.pyc
+│       │   │   └── output_provider.cpython-311.pyc
+│       │   ├── input_provider.py
+│       │   └── output_provider.py
+│       ├── run_gen.py
+│       └── util
+│           ├── __pycache__
+│           │   ├── helpers.cpython-311.pyc
+│           │   ├── placement.cpython-311.pyc
+│           │   └── placement.cpython-39.pyc
+│           ├── helpers.py
+│           └── placement.py
+├── cards.csv
+├── client
+│   ├── bun.lockb
+│   ├── codegen.ts
+│   ├── index.html
+│   ├── package.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.tsx
+│   │   ├── DojoContext.tsx
+│   │   ├── SpellcrafterContext.tsx
+│   │   ├── dojo
+│   │   │   ├── contractComponents.ts
+│   │   │   ├── createClientComponents.ts
+│   │   │   ├── createSystemCalls.ts
+│   │   │   ├── gameConfig.ts
+│   │   │   ├── setup.ts
+│   │   │   ├── setupNetwork.ts
+│   │   │   └── world.ts
+│   │   ├── generated
+│   │   │   ├── cards.json
+│   │   │   └── graphql.ts
+│   │   ├── graphql
+│   │   │   └── schema.graphql
+│   │   ├── hooks
+│   │   │   └── useSync.ts
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   ├── utils
+│   │   │   └── index.ts
+│   │   └── vite-env.d.ts
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── code-gen
+│   └── src
+│       └── main.py
+├── contracts
+│   ├── Scarb.toml
+│   ├── scripts
+│   │   └── default_auth.sh
+│   └── src
+│       ├── cards
+│       │   ├── actions.cairo
+│       │   ├── properties
+│       │   │   ├── barriers_delta.cairo
+│       │   │   ├── chaos_delta.cairo
+│       │   │   ├── chaos_delta_fallback.cairo
+│       │   │   ├── consumable.cairo
+│       │   │   ├── hotcold_delta.cairo
+│       │   │   ├── hotcold_delta_fallback.cairo
+│       │   │   ├── lightdark_delta.cairo
+│       │   │   ├── lightdark_delta_fallback.cairo
+│       │   │   ├── power_delta.cairo
+│       │   │   ├── power_delta_fallback.cairo
+│       │   │   ├── region_lookup.cairo
+│       │   │   ├── requires_cold_gt.cairo
+│       │   │   ├── requires_dark_gt.cairo
+│       │   │   ├── requires_hot_gt.cairo
+│       │   │   ├── requires_light_gt.cairo
+│       │   │   ├── swaps_hotcold.cairo
+│       │   │   └── swaps_lightdark.cairo
+│       │   ├── properties.cairo
+│       │   └── selection.cairo
+│       ├── cards.cairo
+│       ├── components
+│       │   ├── occupied.cairo
+│       │   ├── owner.cairo
+│       │   └── value_in_game.cairo
+│       ├── components.cairo
+│       ├── constants.cairo
+│       ├── lib.cairo
+│       ├── systems.cairo
+│       ├── tests.cairo
+│       ├── types
+│       │   └── region.cairo
+│       ├── types.cairo
+│       ├── utils
+│       │   ├── assertions.cairo
+│       │   ├── random.cairo
+│       │   └── testing.cairo
+│       └── utils.cairo
+├── deck_config.json
+├── gen_config.json
+├── justfile
+├── make_card_description.py
+├── renjs-client
+│   ├── boot.js
+│   ├── bun.lockb
+│   ├── favicon.ico
+│   ├── generated
+│   │   └── cards.json
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── plugins
+│   │   ├── spellcrafter_game.ts
+│   │   └── spellcrafter_plugin.ts
+│   ├── public
+│   │   ├── assets
+│   │   │   ├── ambient
+│   │   │   │   ├── rain.png
+│   │   │   │   ├── sakura-petals.png
+│   │   │   │   ├── snowflakes.png
+│   │   │   │   └── snowflakes_large.png
+│   │   │   ├── audio
+│   │   │   │   └── mysterious.mp3
+│   │   │   ├── backgrounds
+│   │   │   │   ├── altar.png
+│   │   │   │   ├── bench.png
+│   │   │   │   ├── cave.png
+│   │   │   │   ├── forest.png
+│   │   │   │   ├── meadow.png
+│   │   │   │   ├── outside.png
+│   │   │   │   ├── tower.png
+│   │   │   │   └── volcano.png
+│   │   │   ├── characters
+│   │   │   │   ├── Char3AngrySchool.png
+│   │   │   │   ├── Char3HappySchool.png
+│   │   │   │   └── Char3NormalSchool.png
+│   │   │   ├── gui
+│   │   │   │   ├── OpenDyslexic3-Bold.ttf
+│   │   │   │   ├── OpenDyslexic3-Regular.ttf
+│   │   │   │   ├── buttonspritesheet.png
+│   │   │   │   ├── fonts.css
+│   │   │   │   ├── gameframe.png
+│   │   │   │   ├── loadingbarspritesheet.png
+│   │   │   │   ├── mainasset3.png
+│   │   │   │   ├── mainasset4.png
+│   │   │   │   ├── mainasset5.png
+│   │   │   │   ├── namebox.png
+│   │   │   │   ├── readystar.png
+│   │   │   │   └── textbox.png
+│   │   │   └── objects
+│   │   │       └── cardback.png
+│   │   ├── renjs.js
+│   │   └── story
+│   │       ├── Config.yaml
+│   │       ├── GUI.yaml
+│   │       ├── Setup.yaml
+│   │       └── Story.yaml
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── scripts
+│   ├── gen-cards.sh
+│   └── gen-code.sh
+└── tree.txt
+
+50 directories, 164 files

@@ -1,0 +1,47 @@
+.
+├── Scarb.toml
+├── scripts
+│   └── default_auth.sh
+└── src
+    ├── cards
+    │   ├── actions.cairo
+    │   ├── properties
+    │   │   ├── barriers_delta.cairo
+    │   │   ├── chaos_delta.cairo
+    │   │   ├── chaos_delta_fallback.cairo
+    │   │   ├── consumable.cairo
+    │   │   ├── hotcold_delta.cairo
+    │   │   ├── hotcold_delta_fallback.cairo
+    │   │   ├── lightdark_delta.cairo
+    │   │   ├── lightdark_delta_fallback.cairo
+    │   │   ├── power_delta.cairo
+    │   │   ├── power_delta_fallback.cairo
+    │   │   ├── region_lookup.cairo
+    │   │   ├── requires_cold_gt.cairo
+    │   │   ├── requires_dark_gt.cairo
+    │   │   ├── requires_hot_gt.cairo
+    │   │   ├── requires_light_gt.cairo
+    │   │   ├── swaps_hotcold.cairo
+    │   │   └── swaps_lightdark.cairo
+    │   ├── properties.cairo
+    │   └── selection.cairo
+    ├── cards.cairo
+    ├── components
+    │   ├── occupied.cairo
+    │   ├── owner.cairo
+    │   └── value_in_game.cairo
+    ├── components.cairo
+    ├── constants.cairo
+    ├── lib.cairo
+    ├── systems.cairo
+    ├── tests.cairo
+    ├── types
+    │   └── region.cairo
+    ├── types.cairo
+    ├── utils
+    │   ├── assertions.cairo
+    │   ├── random.cairo
+    │   └── testing.cairo
+    └── utils.cairo
+
+8 directories, 37 files
