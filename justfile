@@ -27,11 +27,11 @@ set_auth:
 	#!/usr/bin/env bash
 	set -euxo pipefail
 
-	WORLD_ADDRESS=$(just migrate | grep "at address" | grep -oE9 '(0x[a-fA-F0-9]{63})')
+	WORLD_ADDRESS=$(just migrate | grep "at address" | grep -oE '(0x[a-fA-F0-9]{63})')
 	cd contracts
-	sozo auth writer --world ${WORLD_ADDRESS} ValueInGame spellcrafter_system
-	sozo auth writer --world ${WORLD_ADDRESS} Owner spellcrafter_system 
-	sozo auth writer --world ${WORLD_ADDRESS} Occupied spellcrafter_system 
+	sozo auth writer --world ${WORLD_ADDRESS} ValueInGame 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f
+	sozo auth writer --world ${WORLD_ADDRESS} Owner 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f 
+	sozo auth writer --world ${WORLD_ADDRESS} Occupied 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f 
 
 # start the dev server hosting the web client
 start_client:
@@ -46,6 +46,6 @@ start_indexer:
 	#!/usr/bin/env bash
 	set -euxo pipefail
 	just build_contracts
-	WORLD_ADDRESS=$(just migrate | grep "at address" | grep -oE9 '(0x[a-fA-F0-9]{63})')
+	WORLD_ADDRESS=$(just migrate | grep "at address" | grep -oE '(0x[a-fA-F0-9]{63})')
 	just set_auth
 	cd contracts && torii --world ${WORLD_ADDRESS}

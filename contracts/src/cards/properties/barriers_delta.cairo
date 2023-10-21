@@ -1,4 +1,3 @@
-// File: src/cards/properties/barriers_delta.cairo
 
 // This file is generated. Do not edit! 
 // Edit the cards.csv instead and regenerate
