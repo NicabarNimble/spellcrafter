@@ -29,9 +29,9 @@ set_auth:
 
 	WORLD_ADDRESS=$(just migrate | grep "at address" | grep -oE '(0x[a-fA-F0-9]{63})')
 	cd contracts
-	sozo auth writer --world ${WORLD_ADDRESS} ValueInGame 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f
-	sozo auth writer --world ${WORLD_ADDRESS} Owner 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f 
-	sozo auth writer --world ${WORLD_ADDRESS} Occupied 0x3fc298c5e54977a6d110c396e765f78e47bf7605232a34fa86224b64a37ab6f 
+	sozo auth writer --world ${WORLD_ADDRESS} ValueInGame 0x50f40f8d1037bc5de506631e130ddad60d82c8436896af4a9dcf00f3dc02a55
+	sozo auth writer --world ${WORLD_ADDRESS} Owner 0x7e2c27d4a3345ec003984c76554082063e62d99c971fc0b1d754bfdce30b853 
+	sozo auth writer --world ${WORLD_ADDRESS} Occupied 0x7e683bda2adbf53198e0af9437f58354f6078fd6e311f42b05cec18639e963c 
 
 # start the dev server hosting the web client
 start_client:
